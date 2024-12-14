@@ -32,12 +32,87 @@
 </section>
 
 <!-- Experience Section -->
-<section id="experience" class="py-16 bg-white text-center">
-  <h2 class="text-3xl font-bold mb-8">💼 Experience</h2>
-  <ul class="space-y-4">
-    <li class="text-lg"><strong>TakeMe Tokyo:</strong> Full Stack Engineer (2022 - Present)</li>
-    <li class="text-lg"><strong>Delhivery Ltd:</strong> Senior Software Engineer (2020 - 2022)</li>
-  </ul>
+<!-- Experience & Projects Section -->
+<section class="my-8">
+  <h2 class="text-2xl font-bold border-b-2 border-gray-800 pb-2">Experience & Projects</h2>
+
+  <!-- Experience Item Start -->
+  <div class="mt-6">
+    <div class="flex justify-between">
+      <h3 class="text-xl font-semibold">Full Stack Software Engineer (A2 level), TakeMe Tokyo, Japan</h3>
+      <span class="text-gray-600">Aug 2022 - Present</span>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="mt-4">
+      <h4 class="font-semibold text-lg">Restaurant Booking System: TakeMe Concierge</h4>
+      <p class="italic text-gray-600">Angular 16, Tailwind, AWS</p>
+      <ul class="list-disc ml-5 mt-2 space-y-2">
+        <li>Built a highly available frontend system from scratch, ensuring cross-browser compatibility with support for iOS 13+, Android 10+, and BrowserStack testing.</li>
+        <li>Developed an A/B testing framework to evaluate the shop recommendation system, integrating machine learning models and optimizing recommendations based on real-time performance metrics.</li>
+        <li>Developed an end-to-end invoice generation system, ensuring compliance by securely storing invoices for 10 years in AWS S3.</li>
+        <li>Managed cloud infrastructure with AWS Cloudfront, Route53, ECS, S3, ensuring 99.99% uptime and zero-downtime deployments.</li>
+        <li>Enhanced site security by implementing Google reCAPTCHA for spam prevention.</li>
+        <li>Optimized image delivery using multi-resolution image generation and lazy loading, reducing the average page load time by 100%.</li>
+      </ul>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="mt-4">
+      <h4 class="font-semibold text-lg">Docomo (dbarai) Pay Integration: TakeMe Concierge</h4>
+      <p class="italic text-gray-600">SpringBoot, React</p>
+      <ul class="list-disc ml-5 mt-2 space-y-2">
+        <li>Integrated and maintained Docomo Pay APIs into TakeMe Pay, contributing 5.2% of platform revenue through payment transactions.</li>
+        <li>Reviewed and interpreted Japanese documentation for Docomo's API integration to ensure accurate implementation and compliance with technical requirements.</li>
+      </ul>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="mt-4">
+      <h4 class="font-semibold text-lg">Merchant Admin Site: TakeMe Admin</h4>
+      <p class="italic text-gray-600">Angular, Responsive Design</p>
+      <ul class="list-disc ml-5 mt-2 space-y-2">
+        <li>Revamped the admin panel's UI/UX using CSS Grid, Flexbox, ensuring a responsive interface across desktop and mobile devices.</li>
+        <li>Migrated the QR payment generation page from AngularJS to Angular 16, improving maintainability.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Previous Job -->
+  <div class="mt-8">
+    <div class="flex justify-between">
+      <h3 class="text-xl font-semibold">Senior Software Engineer, Delhivery Ltd. India</h3>
+      <span class="text-gray-600">Apr 2022 - Aug 2022</span>
+    </div>
+
+    <div class="mt-4">
+      <h4 class="font-semibold text-lg">Last Mile Delivery Service: RETURNS Microservice</h4>
+      <p class="italic text-gray-600">Django 2.2, Angular 4, PostgreSQL, AWS</p>
+      <ul class="list-disc ml-5 mt-2 space-y-2">
+        <li>Managed a team of 2 engineers, prepared flow diagrams, delivered knowledge transfer sessions, and coordinated directly with product managers for feature enhancements.</li>
+        <li>Scaled a warehouse dispatch microservice to handle 4x higher data loads using event-driven architecture.</li>
+        <li>Improved API performance by 70% using optimized SQL queries and reduced DynamoDB table size by 30% by removing redundant data.</li>
+        <li>Developed an OTP-verified delivery system supporting electronic proof of delivery documents.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-8">
+    <div class="flex justify-between">
+      <h3 class="text-xl font-semibold">Software Engineer, Delhivery Ltd. India</h3>
+      <span class="text-gray-600">Jun 2020 - Mar 2022</span>
+    </div>
+
+    <div class="mt-4">
+      <h4 class="font-semibold text-lg">Virtual Number Calling System: CALL MASKING</h4>
+      <p class="italic text-gray-600">AWS Lambda, DynamoDB</p>
+      <ul class="list-disc ml-5 mt-2 space-y-2">
+        <li>Implemented a fault-tolerant system for secure, private calls using virtual numbers, ensuring data privacy and compliance.</li>
+        <li>Designed a PIN-based number management system that dynamically allocates virtual numbers, reducing call failures.</li>
+        <li>Increased fault tolerance using a fallback mechanism to handle calling errors by switching to another third-party carrier, leveraging Redis caching and pipelines, resulting in an 85% improvement in connection rate.</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <!-- Skills Section -->
