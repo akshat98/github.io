@@ -17,123 +17,59 @@
       <li><a href="#about" class="block hover:text-blue-400">About</a></li>
       <li><a href="#experience" class="block hover:text-blue-400">Experience</a></li>
       <li><a href="#skills" class="block hover:text-blue-400">Skills</a></li>
+      <li><a href="#certifications" class="block hover:text-blue-400">Certifications & Publications</a></li>
+      <li><a href="#education" class="block hover:text-blue-400">Education</a></li>
       <li><a href="#contact" class="block hover:text-blue-400">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- Mobile Burger Menu -->
-<div class="bg-gray-800 text-white p-5 md:hidden">
-  <div id="menu-toggle" class="text-3xl cursor-pointer">☰</div>
+<div class="bg-gray-800 sticky top-0 text-white p-5 md:hidden">
+  <div class="flex justify-between">
+    <h3 class="text-3xl font-bold">Akshat Joshi</h3>
+    <div id="menu-toggle" class="text-3xl cursor-pointer">☰</div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden left-0 w-full text-white bg-gray-800 p-5 md:hidden">
+    <ul class="space-y-4">
+      <li><a href="#about" class="block hover:text-blue-400">About</a></li>
+      <li><a href="#skills" class="block hover:text-blue-400">Skills</a></li>
+      <li><a href="#experience" class="block hover:text-blue-400">Experience</a></li>
+      <li><a href="#certifications" class="block hover:text-blue-400">Certifications & Publications</a></li>
+      <li><a href="#education" class="block hover:text-blue-400">Education</a></li>
+      <li><a href="#contact" class="block hover:text-blue-400">Contact</a></li>
+    </ul>
+  </div>
 </div>
 
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-gray-800 p-5 md:hidden">
-  <ul class="space-y-4">
-    <li><a href="#about" class="block hover:text-blue-400">About</a></li>
-    <li><a href="#experience" class="block hover:text-blue-400">Experience</a></li>
-    <li><a href="#skills" class="block hover:text-blue-400">Skills</a></li>
-    <li><a href="#contact" class="block hover:text-blue-400">Contact</a></li>
-  </ul>
-</div>
+
 
 <section class="w-full md:w-4/5">
   
-<!-- Hero Section -->
-<section id="about" class="text-center py-16 bg-gray-100">
-  <!-- Profile Image -->
-  <img src="assets/images/profile.png" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg">
+  <!-- Hero Section -->
+  
+<section id="about" class="bg-white">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 py-16 shadow-lg rounded-lg">
+    <!-- Profile Image -->
+    <div class="flex justify-center items-center">
+      <img src="assets/images/profile.png" alt="Profile" class="w-40 h-40 rounded-full shadow-md">
+    </div>
 
-  <!-- Name -->
-  <h2 class="text-4xl font-bold text-gray-800 mb-4">Akshat Joshi</h2>
+    <!-- Content -->
+    <div class="space-y-4">
+      <!-- Name -->
+      <h2 class="text-3xl font-bold text-gray-800">Akshat Joshi</h2>
 
-  <!-- Introduction -->
-  <p class="text-lg text-gray-600 mb-6">I am a Full Stack Software Engineer with experience in developing web applications using technologies such as Java, Angular, and AWS. Currently based in Tokyo, Japan, I focus on creating reliable and scalable solutions for various business needs.</p>
-  <!-- Work Visa Details -->
-  <p class="text-lg text-gray-600 mb-6">🇯🇵 I hold a Japan Work Visa valid until 25-08-2027, allowing me to work on innovative tech projects in Japan.</p>
+      <!-- Introduction -->
+      <p class="text-lg text-gray-600">I am a Full Stack Software Engineer with experience in developing web applications using Java, Angular, and AWS. Currently based in Tokyo, Japan, I focus on creating reliable and scalable solutions for various business needs.</p>
 
+      <!-- Work Visa Details -->
+      <p class="text-lg text-gray-600">🇯🇵 I hold a Japan Work Visa valid until <b>25-08-2027</b></p>
+    </div>
+  </div>
 </section>
-  
-  <section id="experience" class="bg-white p-16">
-    <h2 class="text-3xl font-bold text-center mb-12">Experience & Projects</h2>
-  
-    <!-- TakeMe Tokyo Experience -->
-    <div class="mb-10">
-      <h3 class="text-2xl font-semibold">TakeMe Tokyo, Japan</h3>
-      <p class="text-gray-600">Aug 2022 - Present</p>
-  
-      <div class="border-l-4 border-blue-500 pl-6 mt-4 space-y-8">
-        <div>
-          <h4 class="text-xl font-semibold">Full Stack Software Engineer (A2 Level)</h4>
-  
-          <div class="mt-4">
-            <h5 class="font-semibold">Restaurant Booking System: TakeMe Concierge</h5>
-            <p class="italic text-gray-600">Technologies: Angular 16, Tailwind, AWS</p>
-            <ul class="list-inside space-y-2 mt-2">
-              <li>Built a highly available frontend from scratch, supporting <b>iOS 13+</b>, <b>Android 10+</b>, and BrowserStack testing.</li>
-              <li>Developed an A/B testing framework, optimizing recommendations using machine learning models.</li>
-              <li>Ensured invoice compliance by securely storing invoices for <b>10 years</b> in AWS S3.</li>
-              <li>Managed AWS infrastructure with <b>99.99%</b> uptime and zero-downtime deployments.</li>
-              <li>Enhanced page load time by <b>100%</b> using multi-resolution image generation.</li>
-            </ul>
-          </div>
-  
-          <div class="mt-4">
-            <h5 class="font-semibold">Docomo (dbarai) Pay Integration</h5>
-            <p class="italic text-gray-600">Technologies: SpringBoot, React</p>
-            <ul class="list-inside space-y-2 mt-2">
-              <li>Integrated Docomo Pay APIs, contributing <b>5.2%</b> of platform revenue.</li>
-              <li>Reviewed and translated Japanese API documentation for implementation accuracy.</li>
-            </ul>
-          </div>
-  
-          <div class="mt-4">
-            <h5 class="font-semibold">Merchant Admin Site: TakeMe Admin</h5>
-            <p class="italic text-gray-600">Technologies: Angular, Responsive Design</p>
-            <ul class="list-inside space-y-2 mt-2">
-              <li>Revamped the admin panel’s UI/UX, ensuring responsive design across devices.</li>
-              <li>Migrated QR payment generation from AngularJS to Angular 16.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Delhivery Ltd Experience -->
-    <div class="mb-10">
-      <h3 class="text-2xl font-semibold">Delhivery Public Ltd., India</h3>
-      <p class="text-gray-600">Jun 2020 - Aug 2022</p>
-  
-      <div class="border-l-4 border-blue-500 pl-6 mt-4 space-y-8">
-        <div>
-          <h4 class="text-xl font-semibold">Senior Software Engineer (Apr 2022 - Aug 2022)</h4>
-          <div class="mt-4">
-            <h5 class="font-semibold">Last Mile Delivery Service: RETURNS Microservice</h5>
-            <p class="italic text-gray-600">Technologies: Django 2.2, Angular 4, PostgreSQL, AWS</p>
-            <ul class="list-inside space-y-2 mt-2">
-              <li>Led a team of <b>2 engineers</b>, conducted knowledge transfers, and liaised with product managers.</li>
-              <li>Scaled a warehouse dispatch microservice to handle <b>4x</b> data loads using event-driven architecture.</li>
-              <li>Optimized SQL queries, boosting API performance by <b>70%</b>.</li>
-              <li>Reduced DynamoDB table size by <b>30%</b> through data cleanup.</li>
-            </ul>
-          </div>
-        </div>
-  
-        <div>
-          <h4 class="text-xl font-semibold">Software Engineer (Jun 2020 - Mar 2022)</h4>
-          <div class="mt-4">
-            <h5 class="font-semibold">Virtual Number Calling System: CALL MASKING</h5>
-            <p class="italic text-gray-600">Technologies: AWS Lambda, DynamoDB</p>
-            <ul class="list-inside space-y-2 mt-2">
-              <li>Implemented a secure call masking system using virtual numbers.</li>
-              <li>Reduced call failures by <b>85%</b> using Redis caching and fallback mechanisms.</li>
-              <li>Designed a PIN-based number allocation system ensuring high availability.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- Skills Section -->
   <section id="skills" class="py-16 text-center bg-gray-100">
     <h2 class="text-3xl font-bold mb-8">🛠️ Skills</h2>
@@ -155,14 +91,147 @@
     </p>
   </section>
   
+  <section id="experience" class="bg-white py-16 px-4 sm:px-16">
+    <h2 class="text-3xl font-bold sm:text-center mb-12">Experience & Projects</h2>
+  
+    <!-- TakeMe Tokyo Experience -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold">TakeMe <span class="text-lg">(株式会社)</span>, Tokyo, Japan</h3>
+      <p class="text-gray-600">Aug 2022 - Present</p>
+  
+      <div class="border-l-4 border-blue-500 pl-6 mt-4 space-y-8">
+        <div>
+          <h4 class="text-xl font-semibold">Full Stack Software Engineer (A2 Level)</h4>
+  
+          <div class="mt-4">
+            <h5 class="text-lg font-semibold text-blue-600 mt-4">
+              Restaurant Booking System: TakeMe Concierge
+            </h5>            
+            <p class="italic text-gray-600">Technologies: TypeScript, Java, Angular 16, SpringBoot, AWS</p>
+            <ul class="list-inside space-y-2 mt-2">
+              <li>Built a <b>highly available frontend system</b> from scratch, ensuring <b>cross-browser compatibility</b> with support for iOS 13+, Android 10+, and BrowserStack testing.</li>
+              <li>Developed an <b>A/B testing framework</b> to evaluate the <b>shop recommendation system</b>, integrating <b>machine learning models</b> and optimizing recommendations based on real-time performance metrics.</li>
+              <li>Developed an end-to-end <b>invoice generation system</b>, ensuring compliance by securely storing invoices for <b>10 years</b> in <b>AWS S3</b>.</li>
+              <li>Managed AWS infrastructure with <b>99.99%</b> uptime and zero-downtime deployments.</li>
+              <li>Enhanced page load time by <b>100%</b> using multi-resolution image generation.</li>
+            </ul>
+          </div>
+  
+          <div class="mt-4">
+            <h5 class="text-lg font-semibold text-blue-600 mt-4">Docomo (dbarai) Pay Integration</h5>
+            <p class="italic text-gray-600">Technologies: TypeScript, Java, SpringBoot, React</p>
+            <ul class="list-inside space-y-2 mt-2">
+              <li>Integrated <b>Docomo Pay APIs</b>, contributing <b>5.2%</b> of platform revenue.</li>
+              <li>Reviewed and interpreted <b>Japanese documentation</b> for API integration.</li>
+            </ul>
+          </div>
+  
+          <div class="mt-4">
+            <h5 class="text-lg font-semibold text-blue-600 mt-4">Merchant Admin Site: TakeMe Admin</h5>
+            <p class="italic text-gray-600">Technologies: Angular, Responsive Design</p>
+            <ul class="list-inside space-y-2 mt-2">
+              <li>Revamped the admin panel's UI/UX, ensuring responsive design across devices.</li>
+              <li>Migrated QR payment generation from AngularJS to Angular 16.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Delhivery Ltd Experience -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold">Delhivery Ltd., India</h3>
+      <p class="text-gray-600">Jun 2020 - Aug 2022</p>
+  
+      <div class="border-l-4 border-blue-500 pl-6 mt-4 space-y-8">
+        <div>
+          <h4 class="text-xl font-semibold">Senior Software Engineer (Apr 2022 - Aug 2022)</h4>
+          <div class="mt-4">
+            <h5 class="text-lg font-semibold text-blue-600 mt-4">Last Mile Delivery Service: RETURNS Microservice</h5>
+            <p class="italic text-gray-600">Technologies: Python, Django 2.2, Angular 4, PostgreSQL, AWS</p>
+            <ul class="list-inside space-y-2 mt-2">
+              <li>Led a team of <b>2 engineers</b>, prepared flow diagrams, delivered knowledge transfer sessions, and coordinated with product managers for feature enhancements.</li>
+              <li>Scaled a warehouse dispatch microservice to handle <b>4x higher data loads</b> using <b>event-driven architecture</b>.</li>
+              <li>Optimized SQL queries, boosting API performance by <b>70%</b>.</li>
+              <li>Developed an <b>OTP-verified delivery system</b> supporting electronic proof of delivery documents.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div>
+          <h4 class="text-xl font-semibold">Software Engineer (Jun 2020 - Mar 2022)</h4>
+          <div class="mt-4">
+            <h5 class="text-lg font-semibold text-blue-600 mt-4">Virtual Number Calling System: CALL MASKING</h5>
+            <p class="italic text-gray-600">Technologies: Python, Django, Redis, AWS</p>
+            <ul class="list-inside space-y-2 mt-2">
+              <li>Implemented a <b>fault-tolerant system</b> for secure, private calls using virtual numbers, ensuring <b>data privacy</b> and compliance.</li>
+              <li>Increased <b>fault tolerance</b> using a <b>fallback mechanism</b> to handle calling errors by switching to another third-party carrier, leveraging <b>Redis caching</b> and <b>pipelines</b>, resulting in an <b>85% improvement in connection rate</b>.</li>
+              <li>Designed a <b>PIN-based number management system</b> that dynamically allocates virtual numbers, reducing call failures.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="p-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">B.Tech in Computer Science and Engineering</h3>
+          <p class="text-gray-600">LNM Institute of Information Technology, Jaipur, India</p>
+          <p class="text-gray-500">2016 - 2020</p>
+        </div>
+        <!-- Add more education details here if needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Publications Section -->
+  <section id="certifications" class="p-8 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Certifications & Publications</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">GeeksforGeeks Articles</h3>
+          <p class="text-gray-600">Published articles under the profile name "cr7-bullet"</p>
+          <p class="text-gray-500">Link: <a href="https://auth.geeksforgeeks.org/user/cr7_bullet/articles?utm_source=geeksforgeeks&utm_medium=article_author&utm_campaign=auth_user#" target="_blank" class="text-blue-400">GeeksforGeeks Profile</a></p>
+        </div>
+        <!-- Add more certifications or publications here if needed -->
+        <div class="space-y-4">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Total Certifications: 5</h3>
+            <p class="text-gray-600">For a complete list of certifications, visit my <a href="https://www.linkedin.com/in/akshat-joshi-075093127/details/certifications/" target="_blank" class="text-blue-400">LinkedIn Certifications</a> page. *Open only if LinkedIn Account logged in browser</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests" class="p-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Interests</h2>
+      <ul class="space-y-2 text-lg text-gray-600">
+        <li>🚴‍♂️ Cycling along the Arakawa river</li>
+        <li>💻 Exploring new programming languages and frameworks</li>
+        <li>📚 Reading technical articles and books</li>
+        <li>🎮 Playing strategy-based video games</li>
+        <!-- Add more interests here if needed -->
+      </ul>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="py-16 bg-white text-center">
     <h2 class="text-3xl font-bold mb-8">📞 Contact Me</h2>
     
     <!-- Email -->
     <p class="text-lg flex justify-center items-center space-x-2">
-      <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8l-4 4-4-4m0 8l4-4 4 4"></path>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
       </svg>
       <span>Email:</span>
       <a href="mailto:joshiakshat1998@gmail.com" class="text-blue-500 underline">joshiakshat1998@gmail.com</a>
@@ -185,9 +254,10 @@
       <span>GitHub:</span>
       <a href="https://github.com/akshat98" class="text-blue-500 underline">GitHub Profile</a>
     </p>
-  </section> 
+  </section>
+  
 </section>
 
-  <script src="script.ts"></script>
+  <script src="script.js"></script>
 </body>
 </html>
