@@ -1,6 +1,6 @@
 const menuToggle = document.getElementById("menu-toggle");
-const navList = document.getElementById("nav-list");
+const mobileMenu = document.getElementById("mobile-menu");
 
-menuToggle.addEventListener("click", () => {
-  navList.classList.toggle("hidden");
+menuToggle?.addEventListener("click", () => {
+  mobileMenu?.classList.toggle("hidden");
 });
